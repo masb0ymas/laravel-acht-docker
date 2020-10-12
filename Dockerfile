@@ -38,6 +38,7 @@ RUN docker-php-ext-install xsl
 # RUN pecl install redis && rm -rf /tmp/pear
 RUN docker-php-ext-enable redis
 
+# using customize config php-nginx for example check this repo: https://github.com/masb0ymas/lumen-s3-minio-mongodb
 # COPY ./php.ini $PHP_INI_DIR/php.ini
 # COPY ./application.conf /opt/docker/etc/php/fpm/pool.d/application.conf
 # COPY ./nginx.conf /opt/docker/etc/nginx/nginx.conf
