@@ -27,6 +27,28 @@ Laravel has the most extensive and thorough [documentation](https://laravel.com/
 
 If you don't feel like reading, [Laracasts](https://laracasts.com) can help. Laracasts contains over 1500 video tutorials on a range of topics including Laravel, modern PHP, unit testing, and JavaScript. Boost your skills by digging into our comprehensive video library.
 
+## Using Docker
+
+Change this config in env file
+```sh
+...
+
+DB_CONNECTION=mysql
+DB_HOST=db # default 127.0.0.1, change this with service in docker-compose ( app, db, redis )
+DB_PORT=3307 # default 3306, change this when port already in use
+DB_DATABASE=your_database
+DB_USERNAME=your_username
+DB_PASSWORD=your_password
+
+...
+
+REDIS_HOST=redis # default 127.0.0.1, change this with service in docker-compose ( app, db, redis )
+REDIS_PASSWORD=your_password
+REDIS_PORT=6380 # default 6379, change this when port already in use
+
+...
+```
+
 ## Laravel Sponsors
 
 We would like to extend our thanks to the following sponsors for funding Laravel development. If you are interested in becoming a sponsor, please visit the Laravel [Patreon page](https://patreon.com/taylorotwell).
