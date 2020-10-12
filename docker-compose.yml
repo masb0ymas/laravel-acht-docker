@@ -6,7 +6,7 @@ services:
     container_name: laravel_app
     restart: always
     ports:
-      - "8100:80"
+      - "${APP_PORT}:80"
     volumes:
       - .:/var/www
     working_dir: /var/www
