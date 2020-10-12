@@ -49,6 +49,27 @@ REDIS_PORT=6380 # default 6379, change this when port already in use
 ...
 ```
 
+When you have changed the config above, then run this command
+
+**Build and Run Container**
+
+```sh
+docker-compose up -d
+```
+
+**Status Container**
+```sh
+docker-compose ps
+```
+
+**Remove and Stop Container**
+
+```sh
+docker-compose down
+```
+
+For a more complete explanation, read the docker documentation [Docker](https://docs.docker.com/compose/reference/ps/)
+
 ## Laravel Sponsors
 
 We would like to extend our thanks to the following sponsors for funding Laravel development. If you are interested in becoming a sponsor, please visit the Laravel [Patreon page](https://patreon.com/taylorotwell).
