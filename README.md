@@ -68,6 +68,8 @@ docker-compose ps
 docker-compose down
 ```
 
+Visit your local site [http://localhost:8100](http://localhost:8100)
+
 For a more complete explanation, read the docker documentation [Docker](https://docs.docker.com/compose/reference/ps/)
 
 ## Laravel Sponsors
